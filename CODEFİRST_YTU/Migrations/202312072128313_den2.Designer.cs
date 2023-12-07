@@ -7,18 +7,18 @@ namespace CODEFİRST_YTU.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class YourMigrationName : IMigrationMetadata
+    public sealed partial class den2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(YourMigrationName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(den2));
         
         string IMigrationMetadata.Id
         {
-            get { return "202312071930470_YourMigrationName"; }
+            get { return "202312072128313_den2"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target

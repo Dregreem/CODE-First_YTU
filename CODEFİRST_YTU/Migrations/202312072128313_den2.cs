@@ -18,7 +18,7 @@ public partial class CreateStudentAndAcademicTables : DbMigration
                 Faculty = c.String(nullable: false),
                 Department = c.String(nullable: false),
                 Dateofentry = c.DateTime(nullable: false),
-                // Add other properties as needed...
+                
                 TotalCredit = c.Int(),
                 TotalAKTS = c.Int(),
                 Class = c.Int(nullable: false),
@@ -40,7 +40,7 @@ public partial class CreateStudentAndAcademicTables : DbMigration
                 Facultycode = c.String(),
                 number_of_classes = c.Int(nullable: false),
                 Total_hours_termly = c.Int(nullable: false),
-                // Add other properties as needed...
+                
             })
             .PrimaryKey(t => t.ID);
 

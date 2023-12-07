@@ -125,9 +125,9 @@
     <Compile Include="FORMS\UpdateStudent.Designer.cs">
       <DependentUpon>UpdateStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312071930470_YourMigrationName.cs" />
-    <Compile Include="Migrations\202312071930470_YourMigrationName.designer.cs">
-      <DependentUpon>202312071930470_YourMigrationName.cs</DependentUpon>
+    <Compile Include="Migrations\202312072128313_den2.cs" />
+    <Compile Include="Migrations\202312072128313_den2.designer.cs">
+      <DependentUpon>202312072128313_den2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -162,8 +162,8 @@
     <EmbeddedResource Include="FORMS\UpdateStudent.resx">
       <DependentUpon>UpdateStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312071930470_YourMigrationName.resx">
-      <DependentUpon>202312071930470_YourMigrationName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312072128313_den2.resx">
+      <DependentUpon>202312072128313_den2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

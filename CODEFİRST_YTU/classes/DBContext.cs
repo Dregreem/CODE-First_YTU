@@ -60,6 +60,7 @@ namespace CODEFİRST_YTU.classes
             }
 
         }
+       
 
     }
 }
