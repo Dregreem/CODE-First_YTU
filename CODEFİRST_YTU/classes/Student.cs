@@ -23,6 +23,8 @@ namespace CODEFİRST_YTU.classes
         public List<string> Classes { get; set; }
         public int? TotalCredit { get; set; }
         public int? TotalAKTS { get; set; }
+        public int Class { get; set; }
+        [Required]
 
         bool exists;
         
@@ -66,29 +68,7 @@ namespace CODEFİRST_YTU.classes
             return exists;
 
         }
-        public Student FindAStudent(string TC)
-        {
-            using (var dbContext = new YTUSYSTEM())
-            {
-                int IDofStudent = dbContext.Students
-                                             .Where(stu => stu.TC == TC)
-                                             .Select(stu => (int)stu.ID)
-                                             .FirstOrDefault();
-
-                if (IDofStudent > 0)
-                {
-                    Student student = dbContext.Students.FirstOrDefault(stu => stu.ID == IDofStudent);
-                    return student;
-                }
-                else
-                {
-                    MessageBox.Show("Couldnt find the Student");
-                    return null;
-                }
-            }
-
-               
-        }
+        
 
 
 

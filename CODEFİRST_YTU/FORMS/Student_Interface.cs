@@ -15,11 +15,10 @@ namespace CODEFİRST_YTU.FORMS
     public partial class Student_Interface : Form
     {
         
-        Student_Interface student_Interface;
         public Student_Interface()
         {
             InitializeComponent();
-            student_Interface = this;
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -31,8 +30,15 @@ namespace CODEFİRST_YTU.FORMS
         {
             UpdateStudent updateStudent = new UpdateStudent();
             updateStudent.Show();
-            student_Interface.Close();
+            Hide();
 
+        }
+
+        private void addcourses_Click(object sender, EventArgs e)
+        {
+            Course_interface course = new Course_interface();   
+            course.Show();
+            Hide();
         }
     }
 }

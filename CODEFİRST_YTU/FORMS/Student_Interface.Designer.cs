@@ -33,9 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Update_information_student = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.addcourses = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,7 +47,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1043, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(1019, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 105);
             this.pictureBox1.TabIndex = 0;
@@ -90,37 +88,16 @@
             this.Update_information_student.UseVisualStyleBackColor = true;
             this.Update_information_student.Click += new System.EventHandler(this.Update_information_student_Click);
             // 
-            // button2
+            // addcourses
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(104, 227);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 32);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Show Courses";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(43, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "3-";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(104, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(278, 32);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Add Courses";
-            this.button3.UseVisualStyleBackColor = true;
+            this.addcourses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addcourses.Location = new System.Drawing.Point(104, 160);
+            this.addcourses.Name = "addcourses";
+            this.addcourses.Size = new System.Drawing.Size(278, 32);
+            this.addcourses.TabIndex = 7;
+            this.addcourses.Text = "Add Courses";
+            this.addcourses.UseVisualStyleBackColor = true;
+            this.addcourses.Click += new System.EventHandler(this.addcourses_Click);
             // 
             // label4
             // 
@@ -137,7 +114,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(104, 285);
+            this.button4.Location = new System.Drawing.Point(104, 222);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(278, 32);
             this.button4.TabIndex = 9;
@@ -151,21 +128,19 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(43, 285);
+            this.label5.Location = new System.Drawing.Point(43, 222);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 32);
             this.label5.TabIndex = 8;
-            this.label5.Text = "4-";
+            this.label5.Text = "3-";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.addcourses);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Update_information_student);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -199,9 +174,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Update_information_student;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button addcourses;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label5;

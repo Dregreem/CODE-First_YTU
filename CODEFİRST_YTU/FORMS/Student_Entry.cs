@@ -14,37 +14,35 @@ namespace CODEFİRST_YTU.FORMS
 {
     public partial class Student_Entry : Form
     {
-        Student_Entry student_Entry;
-        Main_interface main_Interface=new Main_interface();
         
-        Student_Interface student_Interface= new Student_Interface();
-        
-
 
         public Student_Entry()
         {
             InitializeComponent();
-            student_Entry = this;
         }
 
         private void Mainpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            student_Entry.Hide();
+            Close();
+            Main_interface main_Interface = new Main_interface();
+
             main_Interface.Show();
         }
 
         private async void button1_Click(object sender, EventArgs e)
         {
             Student student = new Student();
+            Student_Interface student_Interface = new Student_Interface();
 
-            if(student.TCcontrolStudent(txt_tc_student.Text))
+
+            if (student.TCcontrolStudent(txt_tc_student.Text))
             {
                 student.TC = txt_tc_student.Text;
                 student.Password = Convert.ToInt32(txt_password_student.Text);
                 bool res = student.StudentExists(student.TC, student.Password);
                 MessageBox.Show("System entry is succesful Welcome to the System ");
                 await Task.Delay(2000);
-                student_Entry.Hide();
+                Hide();
                 student_Interface.Show();
             }
             else

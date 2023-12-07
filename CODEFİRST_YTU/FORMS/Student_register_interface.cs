@@ -13,19 +13,18 @@ namespace CODEFİRST_YTU.FORMS
 {
     public partial class Student_register_interface : Form
     {
-        Main_interface main_Interface=new Main_interface();
-        Student_register_interface student_register_interface;
         bool res=true;
 
         public Student_register_interface()
         {
             InitializeComponent();
-            student_register_interface = this;
         }
 
         private void main_page_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            student_register_interface.Hide();
+            Hide();
+            Main_interface main_Interface = new Main_interface();
+
             main_Interface.Show();
         }
 
@@ -53,10 +52,16 @@ namespace CODEFİRST_YTU.FORMS
             student.Email = txt_email_student.Text;
             student.Faculty=Convert.ToString(combo_box_student.SelectedIndex);
             student.Department=txt_department_student.Text;
+            student.Class=Convert.ToInt32(txt_student_class.Text);
 
             student.CheckaStudent(student);
 
 
         }
+
+        
     }
-}
+
+       
+    }
+

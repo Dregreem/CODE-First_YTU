@@ -7,18 +7,18 @@ namespace CODEFİRST_YTU.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddNullableColumns : IMigrationMetadata
+    public sealed partial class YourMigrationName : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddNullableColumns));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(YourMigrationName));
         
         string IMigrationMetadata.Id
         {
-            get { return "202312061004143_AddNullableColumns"; }
+            get { return "202312071930470_YourMigrationName"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return null; }
+            get { return Resources.GetString("Source"); }
         }
         
         string IMigrationMetadata.Target

@@ -16,5 +16,17 @@ namespace CODEFİRST_YTU.FORMS
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UpdateAcademic updateAcademic = new UpdateAcademic();
+            updateAcademic.Show();
+            Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -83,6 +83,12 @@
     <Compile Include="FORMS\Academic_register_interface.Designer.cs">
       <DependentUpon>Academic_register_interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\Course interface_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\Course interface_student.Designer.cs">
+      <DependentUpon>Course interface_student.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\Main_interface.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,19 +113,21 @@
     <Compile Include="FORMS\Student_register_interface.Designer.cs">
       <DependentUpon>Student_register_interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\UpdateAcademic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\UpdateAcademic.Designer.cs">
+      <DependentUpon>UpdateAcademic.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\UpdateStudent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORMS\UpdateStudent.Designer.cs">
       <DependentUpon>UpdateStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202312060954471_InitialCreate.cs" />
-    <Compile Include="Migrations\202312060954471_InitialCreate.designer.cs">
-      <DependentUpon>202312060954471_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202312061004143_AddNullableColumns.cs" />
-    <Compile Include="Migrations\202312061004143_AddNullableColumns.designer.cs">
-      <DependentUpon>202312061004143_AddNullableColumns.cs</DependentUpon>
+    <Compile Include="Migrations\202312071930470_YourMigrationName.cs" />
+    <Compile Include="Migrations\202312071930470_YourMigrationName.designer.cs">
+      <DependentUpon>202312071930470_YourMigrationName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -133,6 +141,9 @@
     <EmbeddedResource Include="FORMS\Academic_register_interface.resx">
       <DependentUpon>Academic_register_interface.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\Course interface_student.resx">
+      <DependentUpon>Course interface_student.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\Main_interface.resx">
       <DependentUpon>Main_interface.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,14 +156,14 @@
     <EmbeddedResource Include="FORMS\Student_register_interface.resx">
       <DependentUpon>Student_register_interface.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\UpdateAcademic.resx">
+      <DependentUpon>UpdateAcademic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FORMS\UpdateStudent.resx">
       <DependentUpon>UpdateStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312060954471_InitialCreate.resx">
-      <DependentUpon>202312060954471_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202312061004143_AddNullableColumns.resx">
-      <DependentUpon>202312061004143_AddNullableColumns.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202312071930470_YourMigrationName.resx">
+      <DependentUpon>202312071930470_YourMigrationName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

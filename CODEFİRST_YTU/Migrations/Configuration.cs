@@ -10,6 +10,8 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(CODEFİRST_YTU.classes.YTUSYSTEM context)

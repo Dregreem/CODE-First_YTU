@@ -13,19 +13,17 @@ namespace CODEFİRST_YTU.FORMS
 {
     public partial class Academic_register_interface : Form
     {
-        Main_interface main_Interface = new Main_interface();
-        Academic_register_interface academic_register_interface;
         bool res = true;
         public Academic_register_interface()
         {
             InitializeComponent();
-            academic_register_interface = this;
        
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            academic_register_interface.Hide();
+           Close();
+            Main_interface main_Interface = new Main_interface();
             main_Interface.Show();
         }
 

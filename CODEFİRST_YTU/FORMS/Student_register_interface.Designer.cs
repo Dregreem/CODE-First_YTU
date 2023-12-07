@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Student_register_interface));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_student_class = new System.Windows.Forms.TextBox();
+            this.box = new System.Windows.Forms.Label();
+            this.combo_box_student = new System.Windows.Forms.ComboBox();
             this.main_page = new System.Windows.Forms.LinkLabel();
             this.txt_department_student = new System.Windows.Forms.TextBox();
             this.datetime_student = new System.Windows.Forms.DateTimePicker();
@@ -50,13 +53,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.combo_box_student = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txt_student_class);
+            this.groupBox1.Controls.Add(this.box);
             this.groupBox1.Controls.Add(this.combo_box_student);
             this.groupBox1.Controls.Add(this.main_page);
             this.groupBox1.Controls.Add(this.txt_department_student);
@@ -85,11 +89,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // txt_student_class
+            // 
+            this.txt_student_class.Location = new System.Drawing.Point(707, 302);
+            this.txt_student_class.Name = "txt_student_class";
+            this.txt_student_class.Size = new System.Drawing.Size(193, 22);
+            this.txt_student_class.TabIndex = 24;
+            // 
+            // box
+            // 
+            this.box.AutoSize = true;
+            this.box.BackColor = System.Drawing.Color.Transparent;
+            this.box.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.box.Location = new System.Drawing.Point(502, 292);
+            this.box.Name = "box";
+            this.box.Size = new System.Drawing.Size(93, 32);
+            this.box.TabIndex = 23;
+            this.box.Text = "Class:";
+            this.box.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // combo_box_student
+            // 
+            this.combo_box_student.FormattingEnabled = true;
+            this.combo_box_student.Items.AddRange(new object[] {
+            "MKT",
+            "FEF"});
+            this.combo_box_student.Location = new System.Drawing.Point(707, 192);
+            this.combo_box_student.Name = "combo_box_student";
+            this.combo_box_student.Size = new System.Drawing.Size(200, 24);
+            this.combo_box_student.TabIndex = 22;
+            // 
             // main_page
             // 
             this.main_page.AutoSize = true;
             this.main_page.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_page.Location = new System.Drawing.Point(502, 365);
+            this.main_page.Location = new System.Drawing.Point(502, 419);
             this.main_page.Name = "main_page";
             this.main_page.Size = new System.Drawing.Size(140, 32);
             this.main_page.TabIndex = 21;
@@ -156,7 +191,7 @@
             // student_register_button
             // 
             this.student_register_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.student_register_button.Location = new System.Drawing.Point(508, 297);
+            this.student_register_button.Location = new System.Drawing.Point(508, 351);
             this.student_register_button.Name = "student_register_button";
             this.student_register_button.Size = new System.Drawing.Size(234, 46);
             this.student_register_button.TabIndex = 10;
@@ -284,17 +319,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Student_Register_Interface";
             // 
-            // combo_box_student
-            // 
-            this.combo_box_student.FormattingEnabled = true;
-            this.combo_box_student.Items.AddRange(new object[] {
-            "MKT",
-            "FEF"});
-            this.combo_box_student.Location = new System.Drawing.Point(707, 192);
-            this.combo_box_student.Name = "combo_box_student";
-            this.combo_box_student.Size = new System.Drawing.Size(200, 24);
-            this.combo_box_student.TabIndex = 22;
-            // 
             // Student_register_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,5 +358,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox combo_box_student;
+        private System.Windows.Forms.TextBox txt_student_class;
+        private System.Windows.Forms.Label box;
     }
 }

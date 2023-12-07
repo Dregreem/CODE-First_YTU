@@ -1,6 +1,6 @@
 ﻿namespace CODEFİRST_YTU.FORMS
 {
-    partial class UpdateStudent
+    partial class UpdateAcademic
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateStudent));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateAcademic));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.combo_box_studentup = new System.Windows.Forms.ComboBox();
+            this.combo_box_academicup = new System.Windows.Forms.ComboBox();
             this.Interface = new System.Windows.Forms.LinkLabel();
-            this.txt_department_studentup = new System.Windows.Forms.TextBox();
-            this.datetime_studentup = new System.Windows.Forms.DateTimePicker();
-            this.txt_password_studentup = new System.Windows.Forms.TextBox();
-            this.txt_email_studentup = new System.Windows.Forms.TextBox();
-            this.txt_address_studentup = new System.Windows.Forms.TextBox();
-            this.txt_tc_student = new System.Windows.Forms.TextBox();
-            this.txt_surname_studentup = new System.Windows.Forms.TextBox();
-            this.txt_name_studentup = new System.Windows.Forms.TextBox();
-            this.student_register_button = new System.Windows.Forms.Button();
+            this.datetime_academicup = new System.Windows.Forms.DateTimePicker();
+            this.txt_password_academicup = new System.Windows.Forms.TextBox();
+            this.txt_email_academicup = new System.Windows.Forms.TextBox();
+            this.txt_address_academicup = new System.Windows.Forms.TextBox();
+            this.txt_tc_academic = new System.Windows.Forms.TextBox();
+            this.txt_surname_academicup = new System.Windows.Forms.TextBox();
+            this.txt_name_academicup = new System.Windows.Forms.TextBox();
+            this.update = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,29 +49,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_student_class_up = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.txt_student_class_up);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.combo_box_studentup);
+            this.groupBox1.Controls.Add(this.combo_box_academicup);
             this.groupBox1.Controls.Add(this.Interface);
-            this.groupBox1.Controls.Add(this.txt_department_studentup);
-            this.groupBox1.Controls.Add(this.datetime_studentup);
-            this.groupBox1.Controls.Add(this.txt_password_studentup);
-            this.groupBox1.Controls.Add(this.txt_email_studentup);
-            this.groupBox1.Controls.Add(this.txt_address_studentup);
-            this.groupBox1.Controls.Add(this.txt_tc_student);
-            this.groupBox1.Controls.Add(this.txt_surname_studentup);
-            this.groupBox1.Controls.Add(this.txt_name_studentup);
-            this.groupBox1.Controls.Add(this.student_register_button);
+            this.groupBox1.Controls.Add(this.datetime_academicup);
+            this.groupBox1.Controls.Add(this.txt_password_academicup);
+            this.groupBox1.Controls.Add(this.txt_email_academicup);
+            this.groupBox1.Controls.Add(this.txt_address_academicup);
+            this.groupBox1.Controls.Add(this.txt_tc_academic);
+            this.groupBox1.Controls.Add(this.txt_surname_academicup);
+            this.groupBox1.Controls.Add(this.txt_name_academicup);
+            this.groupBox1.Controls.Add(this.update);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -82,102 +74,95 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(55, 32);
+            this.groupBox1.Location = new System.Drawing.Point(63, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(943, 496);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // combo_box_studentup
+            // combo_box_academicup
             // 
-            this.combo_box_studentup.FormattingEnabled = true;
-            this.combo_box_studentup.Items.AddRange(new object[] {
-            "MKT",
-            "FEF"});
-            this.combo_box_studentup.Location = new System.Drawing.Point(707, 192);
-            this.combo_box_studentup.Name = "combo_box_studentup";
-            this.combo_box_studentup.Size = new System.Drawing.Size(200, 24);
-            this.combo_box_studentup.TabIndex = 22;
+            this.combo_box_academicup.FormattingEnabled = true;
+            this.combo_box_academicup.Items.AddRange(new object[] {
+            "MKT-2000",
+            "FEF-5000"});
+            this.combo_box_academicup.Location = new System.Drawing.Point(707, 190);
+            this.combo_box_academicup.Name = "combo_box_academicup";
+            this.combo_box_academicup.Size = new System.Drawing.Size(200, 24);
+            this.combo_box_academicup.TabIndex = 21;
             // 
             // Interface
             // 
             this.Interface.AutoSize = true;
             this.Interface.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Interface.Location = new System.Drawing.Point(502, 419);
+            this.Interface.Location = new System.Drawing.Point(515, 321);
             this.Interface.Name = "Interface";
             this.Interface.Size = new System.Drawing.Size(124, 32);
-            this.Interface.TabIndex = 21;
+            this.Interface.TabIndex = 20;
             this.Interface.TabStop = true;
             this.Interface.Text = "Interface";
-            this.Interface.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Interface_LinkClicked);
+            this.Interface.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Interface_LinkClicked_1);
             // 
-            // txt_department_studentup
+            // datetime_academicup
             // 
-            this.txt_department_studentup.Location = new System.Drawing.Point(707, 258);
-            this.txt_department_studentup.Name = "txt_department_studentup";
-            this.txt_department_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_department_studentup.TabIndex = 20;
+            this.datetime_academicup.Location = new System.Drawing.Point(707, 129);
+            this.datetime_academicup.Name = "datetime_academicup";
+            this.datetime_academicup.Size = new System.Drawing.Size(200, 22);
+            this.datetime_academicup.TabIndex = 18;
             // 
-            // datetime_studentup
+            // txt_password_academicup
             // 
-            this.datetime_studentup.Location = new System.Drawing.Point(707, 129);
-            this.datetime_studentup.Name = "datetime_studentup";
-            this.datetime_studentup.Size = new System.Drawing.Size(200, 22);
-            this.datetime_studentup.TabIndex = 18;
+            this.txt_password_academicup.Location = new System.Drawing.Point(182, 438);
+            this.txt_password_academicup.Name = "txt_password_academicup";
+            this.txt_password_academicup.Size = new System.Drawing.Size(193, 22);
+            this.txt_password_academicup.TabIndex = 17;
             // 
-            // txt_password_studentup
+            // txt_email_academicup
             // 
-            this.txt_password_studentup.Location = new System.Drawing.Point(182, 438);
-            this.txt_password_studentup.Name = "txt_password_studentup";
-            this.txt_password_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_password_studentup.TabIndex = 17;
+            this.txt_email_academicup.Location = new System.Drawing.Point(174, 375);
+            this.txt_email_academicup.Name = "txt_email_academicup";
+            this.txt_email_academicup.Size = new System.Drawing.Size(193, 22);
+            this.txt_email_academicup.TabIndex = 16;
             // 
-            // txt_email_studentup
+            // txt_address_academicup
             // 
-            this.txt_email_studentup.Location = new System.Drawing.Point(174, 375);
-            this.txt_email_studentup.Name = "txt_email_studentup";
-            this.txt_email_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_email_studentup.TabIndex = 16;
+            this.txt_address_academicup.Location = new System.Drawing.Point(174, 321);
+            this.txt_address_academicup.Name = "txt_address_academicup";
+            this.txt_address_academicup.Size = new System.Drawing.Size(193, 22);
+            this.txt_address_academicup.TabIndex = 15;
             // 
-            // txt_address_studentup
+            // txt_tc_academic
             // 
-            this.txt_address_studentup.Location = new System.Drawing.Point(174, 321);
-            this.txt_address_studentup.Name = "txt_address_studentup";
-            this.txt_address_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_address_studentup.TabIndex = 15;
+            this.txt_tc_academic.Location = new System.Drawing.Point(174, 258);
+            this.txt_tc_academic.Name = "txt_tc_academic";
+            this.txt_tc_academic.Size = new System.Drawing.Size(193, 22);
+            this.txt_tc_academic.TabIndex = 14;
             // 
-            // txt_tc_student
+            // txt_surname_academicup
             // 
-            this.txt_tc_student.Location = new System.Drawing.Point(174, 258);
-            this.txt_tc_student.Name = "txt_tc_student";
-            this.txt_tc_student.Size = new System.Drawing.Size(193, 22);
-            this.txt_tc_student.TabIndex = 14;
+            this.txt_surname_academicup.Location = new System.Drawing.Point(174, 192);
+            this.txt_surname_academicup.Name = "txt_surname_academicup";
+            this.txt_surname_academicup.Size = new System.Drawing.Size(193, 22);
+            this.txt_surname_academicup.TabIndex = 13;
             // 
-            // txt_surname_studentup
+            // txt_name_academicup
             // 
-            this.txt_surname_studentup.Location = new System.Drawing.Point(174, 192);
-            this.txt_surname_studentup.Name = "txt_surname_studentup";
-            this.txt_surname_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_surname_studentup.TabIndex = 13;
+            this.txt_name_academicup.Location = new System.Drawing.Point(174, 130);
+            this.txt_name_academicup.Name = "txt_name_academicup";
+            this.txt_name_academicup.Size = new System.Drawing.Size(193, 22);
+            this.txt_name_academicup.TabIndex = 12;
             // 
-            // txt_name_studentup
+            // update
             // 
-            this.txt_name_studentup.Location = new System.Drawing.Point(174, 130);
-            this.txt_name_studentup.Name = "txt_name_studentup";
-            this.txt_name_studentup.Size = new System.Drawing.Size(193, 22);
-            this.txt_name_studentup.TabIndex = 12;
-            // 
-            // student_register_button
-            // 
-            this.student_register_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.student_register_button.Location = new System.Drawing.Point(508, 351);
-            this.student_register_button.Name = "student_register_button";
-            this.student_register_button.Size = new System.Drawing.Size(234, 46);
-            this.student_register_button.TabIndex = 10;
-            this.student_register_button.Text = "Update";
-            this.student_register_button.UseVisualStyleBackColor = true;
-            this.student_register_button.Click += new System.EventHandler(this.student_register_button_Click);
+            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.Location = new System.Drawing.Point(508, 248);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(234, 46);
+            this.update.TabIndex = 10;
+            this.update.Text = "Update";
+            this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // label10
             // 
@@ -187,21 +172,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.Location = new System.Drawing.Point(502, 182);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 32);
+            this.label10.Size = new System.Drawing.Size(204, 32);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Faculty :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(502, 248);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 32);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Departmant :";
+            this.label10.Text = "Faculty_Code :";
             // 
             // label8
             // 
@@ -293,40 +266,21 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(31, 37);
+            this.label1.Location = new System.Drawing.Point(42, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(483, 46);
+            this.label1.Size = new System.Drawing.Size(523, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student_Update_Interface";
+            this.label1.Text = "Academic_Update_Interface";
             // 
-            // txt_student_class_up
-            // 
-            this.txt_student_class_up.Location = new System.Drawing.Point(707, 321);
-            this.txt_student_class_up.Name = "txt_student_class_up";
-            this.txt_student_class_up.Size = new System.Drawing.Size(193, 22);
-            this.txt_student_class_up.TabIndex = 24;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(502, 311);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 32);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Class :";
-            // 
-            // UpdateStudent
+            // UpdateAcademic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1154, 558);
+            this.ClientSize = new System.Drawing.Size(1155, 566);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UpdateStudent";
-            this.Text = "UpdateStudent";
+            this.Name = "UpdateAcademic";
+            this.Text = "UpdateAcademic";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -336,19 +290,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox combo_box_studentup;
+        private System.Windows.Forms.ComboBox combo_box_academicup;
         private System.Windows.Forms.LinkLabel Interface;
-        private System.Windows.Forms.TextBox txt_department_studentup;
-        private System.Windows.Forms.DateTimePicker datetime_studentup;
-        private System.Windows.Forms.TextBox txt_password_studentup;
-        private System.Windows.Forms.TextBox txt_email_studentup;
-        private System.Windows.Forms.TextBox txt_address_studentup;
-        private System.Windows.Forms.TextBox txt_tc_student;
-        private System.Windows.Forms.TextBox txt_surname_studentup;
-        private System.Windows.Forms.TextBox txt_name_studentup;
-        private System.Windows.Forms.Button student_register_button;
+        private System.Windows.Forms.DateTimePicker datetime_academicup;
+        private System.Windows.Forms.TextBox txt_password_academicup;
+        private System.Windows.Forms.TextBox txt_email_academicup;
+        private System.Windows.Forms.TextBox txt_address_academicup;
+        private System.Windows.Forms.TextBox txt_tc_academic;
+        private System.Windows.Forms.TextBox txt_surname_academicup;
+        private System.Windows.Forms.TextBox txt_name_academicup;
+        private System.Windows.Forms.Button update;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -357,7 +309,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_student_class_up;
-        private System.Windows.Forms.Label label11;
     }
 }
